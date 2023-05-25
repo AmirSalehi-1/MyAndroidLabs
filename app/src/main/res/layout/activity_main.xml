@@ -28,4 +28,35 @@
         android:text="@string/button_message"
         android:id="@+id/mybutton"
         />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:id="@+id/myimagebutton"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckBox"
+        android:id="@+id/mycheckbox"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Switch"
+        android:id="@+id/myswitch"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <RadioButton
+        android:text="@string/RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myradioButton"/>
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mylogo"/>
+
+        />
+
+
 </LinearLayout>
