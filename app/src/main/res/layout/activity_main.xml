@@ -18,7 +18,7 @@
         android:id="@+id/myedittext"
  android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="@string/editmessage"
+
         android:hint="@string/hinttext"
         />
     <Button

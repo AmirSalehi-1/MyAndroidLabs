@@ -29,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton myImagebutton= variableBinding.myimagebutton;
         myImagebutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            @Override public void onClick(View v) {
 
                 int width = v.getWidth();
                 int height = v.getHeight();
@@ -46,14 +45,19 @@ public class MainActivity extends AppCompatActivity {
         EditText myedit = variableBinding.myedittext;
         ImageView mylogo = variableBinding.mylogo;
 
-        button.setOnClickListener(new View.OnClickListener() {
+    variableBinding.mybutton.setOnClickListener(click->{
+    viewModel.editString.postValue(variableBinding.myedittext.getText().toString());
+});
+    viewModel.editString.observe(this,s -> { variableBinding.textview.setText("You write here: "+s);});
+
+        /*button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String editTextContent = myedit.getText().toString();
                 mytext.setText("Your edit text has : " + editTextContent);
             }
-        });
-
+        });/*
+         */
         viewModel.getIsSelected().observe(this, selected -> {
             variableBinding.mycheckbox.setChecked((Boolean) selected);
             variableBinding.myradioButton.setChecked((Boolean) selected);

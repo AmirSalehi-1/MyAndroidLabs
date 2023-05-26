@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 public class MainViewModel extends ViewModel {
 
+    MutableLiveData<String>editString = new MutableLiveData<>();
     private MutableLiveData<Boolean> isSelected = new MutableLiveData<>();
 
     public MainViewModel(){
