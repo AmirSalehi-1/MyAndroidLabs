@@ -3,6 +3,9 @@ plugins {
 }
 
 android {
+    buildFeatures {
+        viewBinding true
+    }
     namespace 'com.example.cst2335'
     compileSdk 33
 
